@@ -1,0 +1,12 @@
+filebeat.inputs:
+- type: log
+  enabled: true
+  paths:
+    - /usr/src/app/test.log
+
+output.elasticsearch:
+  hosts: ["http://es01:9200", "http://es02:9200"]
+  index: "dummy-logs-%{+yyyy.MM.dd}"
+
+setup.template.name: "dummy-logs"
+setup.template.pattern: "dummy-logs-*"

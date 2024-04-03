@@ -1,0 +1,25 @@
+
+
+
+### Cluster Health API
+GET /_cluster/health?pretty
+Host: localhost:9200
+### Cluster Health API
+GET /_cluster/health?pretty
+Host: localhost:9201
+
+
+### Cat Shards API
+GET /_cat/shards?pretty
+Host: localhost:9200
+### Cat Shards API
+GET /_cat/shards?pretty
+Host: localhost:9201
+
+
+### Count API
+GET /filebeat-7.10.0-2024.04.03-000001/_count?pretty
+Host: localhost:9200
+### Count API
+GET /filebeat-7.10.0-2024.04.03-000001/_count?pretty
+Host: localhost:9201
