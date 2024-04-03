@@ -1,4 +1,7 @@
 
+### This file for Visual Studio Code Extension: REST Client
+### Comfortable to use for making HTTP requests
+
 ### Logstash send data to Elasticsearch
 POST /
 Host: localhost:8080
