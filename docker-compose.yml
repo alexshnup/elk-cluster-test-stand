@@ -81,6 +81,21 @@ services:
       - es02
     networks:
       - esnet
+  
+
+  logstash:
+    image: docker.elastic.co/logstash/logstash:7.10.0
+    container_name: logstash
+    volumes:
+      - ./logstash/config/logstash.yml:/usr/share/logstash/config/logstash.yml
+      - ./logstash/pipeline:/usr/share/logstash/pipeline
+    ports:
+      - "5044:5044"
+    depends_on:
+      - es01
+      - es02
+    networks:
+      - esnet
 
 volumes:
   es01data:
