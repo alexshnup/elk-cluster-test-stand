@@ -91,6 +91,7 @@ services:
       - ./logstash/pipeline:/usr/share/logstash/pipeline
     ports:
       - "5044:5044"
+      - "8080:8080"
     depends_on:
       - es01
       - es02

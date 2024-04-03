@@ -7,3 +7,13 @@ It's designed for easy deployment and testing of log collection, search, and vis
 ```
 docker-compose up -d
 ```
+
+
+
+## Send test logs to Logstash using Curl
+```
+curl -XPOST http://localhost:8080 -H 'Content-Type: application/json' -d '{
+  "message": "This is a test log message",
+  "timestamp": "'$(date --iso-8601=seconds)'"
+}'
+```

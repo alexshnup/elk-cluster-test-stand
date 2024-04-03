@@ -1,0 +1,14 @@
+
+### Logstash send data to Elasticsearch
+POST /
+Host: localhost:8080
+Content-Type: application/x-ndjson
+
+{"index": {"_index": "my-index", "_id": "1"}}
+{"field1": "value1"}
+
+{"index": {"_index": "my-index", "_id": "2"}}
+{"field1": "value2"}
+
+{"index": {"_index": "my-index", "_id": "3"}}
+{"field1": "value3"}
